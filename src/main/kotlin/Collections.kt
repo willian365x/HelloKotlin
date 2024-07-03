@@ -1,12 +1,12 @@
-fun main(){
+fun main() {
 
     //MAP
     val readOnlyJuiceMenu = mapOf("apple" to 100, "kiwi" to 190, "orange" to 100)
     println(readOnlyJuiceMenu)
 
-    val juiceMenu: MutableMap<String,Int> = mutableMapOf("apple" to 100, "kiwi" to 190, "orange" to 100)
+    val juiceMenu: MutableMap<String, Int> = mutableMapOf("apple" to 100, "kiwi" to 190, "orange" to 100)
 
-    juiceMenu.put("coconut",150)
+    juiceMenu.put("coconut", 150)
 
     println(juiceMenu)
 
@@ -22,10 +22,10 @@ fun main(){
 
 
     //LIST
-    val readOnlyShapes = listOf("triangle","square","circle")
+    val readOnlyShapes = listOf("triangle", "square", "circle")
     println(readOnlyShapes)
 
-    val shapes: MutableList<String> = mutableListOf("triangle","square","circle")
+    val shapes: MutableList<String> = mutableListOf("triangle", "square", "circle")
     println(shapes)
 
     val shapesLocked: List<String> = shapes
@@ -43,9 +43,9 @@ fun main(){
 
 
     //SET
-    val readOnlyFruit = setOf("maçã","banana","cereja","cereja")
+    val readOnlyFruit = setOf("maçã", "banana", "cereja", "cereja")
     println(readOnlyFruit)
-    val fruit: MutableSet<String> = mutableSetOf("maçã","banana","cereja","limão","limão")
+    val fruit: MutableSet<String> = mutableSetOf("maçã", "banana", "cereja", "limão", "limão")
     println(fruit)
 
     println("Este conjunto tem ${fruit.count()} items")
